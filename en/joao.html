@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS geral para a página-->
+    <link rel="stylesheet" type="text/css" href="../css/joao.css">
+
+    <!--CSS terminal effect (animação no topo da página)-->
+    <link rel="stylesheet" href="../css/terminal_effect.css">
+
+    <!--CSS para os skill bars-->
+    <link rel="stylesheet" href="../css/skill_bars.css">
+
+    <!--CSS para o display dos certificados-->
+    <link rel="stylesheet" href="../css/certificados.css">
+
+    <!--Ficheiro CSS para o to the top button-->
+    <link rel="stylesheet" href="../css/top_button.css">
+
+    <!--Links para as fontes, através do API da Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    
+    <title>João Rocha [EN]</title>
+</head>
+<body>
+    <!--Animação "terminal effect"-->
+    <header class="top-bar">
+		<div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+		<div class="top">
+		</div>
+	</header>
+	<main>
+        <div>
+            <table>
+                <tr>
+                    <td><img src="../images/avatar-joao.png" alt="João Rocha"></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        <h1>João Pedro Silva Rocha</h1>
+                        <p>🏫: Student in <strong>Computer Science Degree</strong></p>
+                        <p>💻: HelpDesk Technician</p>
+                        <hr class="separator">
+                        <p style="font-size: 20px;">Hi! I'm João Rocha <span class="wave">👋</span></p>
+                        <p>Welcome to my personal website</p>
+                        <p>📧<a href="mailto:joao.procha@pm.me">joao.procha@pm.me</a></p>
+                        <p>🌐<a href="https://www.linkedin.com/in/jo%C3%A3o-rocha-769ab5194/">LinkedIn</a></p>
+                    </td>
+                </tr>
+            </table>
+            <hr class="separator">
+            <h3>Education</h3>
+            <ul>
+                <li>Computer Science Degree - <em><a href="http://istec-porto.pt/licenciatura-em-informatica-2/">ISTEC Porto</a></em></li>
+                <li>Computer Systems and Networks - <em><a href="http://istec-porto.pt/ctesp-redes-e-sistemas-informaticos/">ISTEC Porto</a></em></li>
+                <li>Eletronics, Automation and Computers - <em><a href="https://www.ruizcosta.edu.pt/courses-eac.html">Escola Profissional Ruiz Costa</a></em></li>
+            </ul>
+            <hr class="separator">
+            <h3>Hobbies</h3>
+            <ol type="I">
+                <li>Tinker with Linux servers and self-host apps (Home Server and VPS)</li>
+                <li>Personal Web Development projects</li>
+                <li>Codecademy, coursera, Udemy</li>
+                <li>Casual Gaming, movies and TV Shows</li>
+            </ol>
+            <hr class="separator">
+            <h3>Professional Experience</h3>
+            <table cellspacing="20">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>February 2020 - Present</td>
+                    <td>HelpDesk Technician @ <em><a href="https://ceiia.com">CEiiA</a></em></td>
+                </tr>
+                <tr>
+                    <td>August 2017 - December 2017</td>
+                    <td>Production Worker @ <em><a href="https://tintas2000.pt">Tintas 2000</a></em></td>
+                </tr>
+            </table>
+            <hr class="separator">
+            <h3>Skills</h3>
+            <button onclick="moveBars()" style="cursor: pointer;" id="skill-button">Get Skill Level!</button>
+            <table cellspacing="50" style="width: 100%; height:auto;">
+                <tr>
+                    <td><img class="skill-icon" src="../images/linux.png" alt="Tux (Linux)"></td>
+                    <td><img class="skill-icon" src="../images/python.png" alt="Python"></td>
+                    <td><img class="skill-icon" src="../images/mysql.png" alt="MySQL"></td>
+                    <td><img class="skill-icon" src="../images/cpp.png" alt="C++"></td>
+                    <td><img class="skill-icon" src="../images/csharp.png" alt="C#"></td>
+                    <td><img class="skill-icon" src="../images/js.png" alt="JavaScript"></td>
+                    <td><img class="skill-icon" src="../images/docker.png" alt="Docker"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="w3-light-grey">
+                            <div id="linux-skill" class="w3-blue" style="height:24px;width:0%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-light-grey">
+                            <div id="python-skill" class="w3-red" style="height:24px;width:0%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-light-grey">
+                            <div id="mysql-skill" class="w3-red" style="height:24px;width:0%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-light-grey">
+                            <div id="cpp-skill" class="w3-red" style="height:24px;width:0%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-light-grey">
+                            <div id="csharp-skill" class="w3-red" style="height:24px;width:0%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-light-grey">
+                            <div id="js-skill" class="w3-red" style="height:24px;width:0%"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-light-grey">
+                            <div id="docker-skill" class="w3-red" style="height:24px;width:0%"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr class="separator">
+        </div>
+        <h3>Certificates</h3>
+        <br>
+        <div class="row">
+            <div class="column">
+              <img src="../images/python_certificado.png" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width: 45%; height: 45%; cursor: pointer;">
+            </div>
+            <div class="column">
+              <img src="../images/sql_certificado.png" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width: 45%; height: 45%; cursor: pointer;">
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../images/python_certificado.png" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../images/sql_certificado.png" style="width:100%">
+              </div>
+          
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          </div>
+          <br><br><br>
+          <!--Botão para puxar para o topo da página-->
+          <button onclick="topFunction()" id="topButton" title="Go to top">&nbsp;⬆&nbsp;</button> 
+    </main>
+	<footer>
+        <div id="links-nav">
+            &nbsp;&nbsp;
+            <a href="../en/index.html" class="nav-item">Homepage</a>
+            &nbsp;&nbsp;
+            <a href="#" class="nav-item">Sobre Nós</a>
+        </div>
+        <!--Menu seleção de linguagem-->
+        <div class="dropup">
+            <button class="dropbtn">Linguagem</button>
+            <div class="dropup-content">
+              <a href="../en/joao.html"><strong>English</strong></a>
+              <a href="../pt/joao.html">Português</a>
+            </div>
+          </div>
+	</footer>
+
+    <!--javascript para a animação "terminal effect"-->
+    <script src="../scripts/terminal_effect.js"></script>
+
+    <!--javascript para a animação das barras dos skills-->
+    <script src="../scripts/skills.js"></script>
+
+    <!--Javascript para os certificados-->
+    <script src="../scripts/certificados.js"></script>
+
+    <!--Ficheiro javascript para o to the top button-->
+    <script src="../scripts/top_button.js"></script>
+</body>
+</html>

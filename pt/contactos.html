@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map {
+            position: absolute;
+            top: 20%;
+            bottom: 20%;
+            left: 20%;
+            right: 20%;
+        }
+
+        h1 {
+            text-align: center;
+            left: 20%;
+        }
+
+        h3 {
+            text-align: center;
+            left: 20%;
+        }
+
+        h5 {
+            text-align: center;
+            left: 20%;
+            right: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([41.1493836,-8.60311], 30);
+
+        L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Ms1ewiL5rf6SN9FCFSOf', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+        }).addTo(map);
+        var marker = L.marker([41.1493836,-8.60311]).addTo(map);
+    </script>
+    <h1>Interesse em contactar-nos?</h1>
+    <h3>Visite-nos abaixo!</h3>
+    <h5>Para informações por email ou telefone, os nossos contactos individuais encontram-se na página de cada um.</h5>
+</body>
+<footer>
+    <div class="dropup">
+      <button class="dropbtn">Language</button>
+      <div class="dropup-content">
+        <a href="../en/index.html">English</a>
+        <a href="../pt/index.html"> <strong>Português</strong></a>
+      </div>
+    </div>
+  
+    <!--Direitos de autor-->
+    <div style="text-align: center;">
+      <p class="rights">&copy; João Rocha &amp; Tiago Santos</p><p class="rights">All Rights Reserved</p>
+    </div>
+  
+    <!--Div para o logotipo das "redes sociais" (de momento apenas GitHub)-->
+      <div class="logo">
+        <a href="#">
+          <img src="images/GitHub-Mark-Light-32px.png" alt="GitHub Repo" class="logo-top">
+          <img src="images/GitHub-Mark-32px.png">  
+        </a>
+      </div>
+</html>

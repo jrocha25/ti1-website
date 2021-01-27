@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - João & Tiago</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/top_button.css">
+</head>
+<body>
+  <header>João Rocha &amp; Tiago Santos</header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html">Homepage</a>
+      <a href="./joao.html">João Rocha</a>
+      <a href="./tiago.html">Tiago Santos</a>
+    </div>
+    <span id="burger" onclick="openNav()">&#9776;</span>
+    <h1>Sobre Nós</h1>
+    <!--Colocar sobre nos e contactos neste div abaixo-->
+    <p>Texto aqui</p>
+    <div>
+    </div>
+    <hr>
+    <h1>Comentários</h1>
+    <!--Div para todas as reviews-->
+    <div>
+
+        <!--Div para as reviews falsas-->
+        <div id="users_review">
+            <p><strong>Nome:&nbsp;</strong>Tesla</p>
+            <p><strong>Comentário:</strong></p>
+            <p>
+                Gostamos dos vossos currículos! Vejam os vossos emails 👀
+            </p>
+            <p>Submetido a 04/1/2021</p>
+            <hr>
+            <p><strong>Nome:&nbsp;</strong>Microsoft</p>
+            <p><strong>Comentário:</strong></p>
+            <p>
+                O Dr. Gates gostava de entrar em contacto com vocês 😉
+            </p>
+            <p>Submetido a 24/1/2021</p>
+            <hr>
+            <!--As reviews submetidas pelo user serão acrescentadas através de js abaixo desta linha-->
+        </div>
+
+        <!--Botões e textboxes para o user escrever a review-->
+        <div>
+            <strong>Nome</strong><br>
+            <input type="text" id="user_name_review"><br><br>
+            <strong>Comentário</strong><br>
+            <textarea id="user_textarea_review" cols="30" rows="10">
+            </textarea><br>
+            <button onclick="escreverReview()" id="review_button">Submeter</button>
+            <br><br><br><br><br>
+        </div>
+    </div>
+    <footer>
+        <div class="dropup">
+          <button class="dropbtn">Language</button>
+          <div class="dropup-content">
+            <a href="../en/about_us.html">English</a>
+            <a href="../pt/about_us.html"> <strong>Português</strong></a>
+          </div>
+        </div>
+      
+        <!--Direitos de autor-->
+        <div style="text-align: center;">
+          <p class="rights">&copy; João Rocha &amp; Tiago Santos</p><p class="rights">All Rights Reserved</p>
+        </div>
+        </footer>
+    <button onclick="topFunction()" id="topButton" title="Go to top">&nbsp;⬆&nbsp;</button>
+</body>
+<script src="../scripts/review_system.js"></script>
+<script src="../scripts/top_button.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("burger").style.display = "none";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("burger").style.display = "block";
+  }
+  </script>
+</html>

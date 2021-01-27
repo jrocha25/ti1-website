@@ -1,0 +1,253 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* Divide a janela em dois (split) */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+}
+
+/* Controla o lado esquerdo (João) do split */
+.joao {
+  left: 0;
+  /*background-color: #3f72af;*/
+}
+
+/* Controla o lado direito (Tiago) do split */
+.tiago {
+  right: 0;
+  /*background-color: #a6f6f1;*/
+}
+  
+/* Centra horizontalmente e verticalmente o conteudo */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  
+/* Centra as imagens */
+.centered img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+/* Font para os nomes */
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Atributos para as imagens */
+.avatar{
+  opacity: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/* Efeito de fade quando se passa o rato nas fotos */
+.avatar:hover{
+  opacity: 0.5;
+}
+
+/* Barra footer */
+footer{
+  height: 50px;
+	background-color: #112d4e;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+	position: fixed;
+  width: 100%;
+  z-index: 1;
+  right: 0px;
+}
+
+/* Atributos CSS logo (github) */
+.logo{
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  display: inline-block;
+}
+
+/* Funcionalidade de hover no logo do GitHub */
+.logo .logo-top{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.logo:hover .logo-top{
+  display: inline;
+}
+
+.rights{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+}
+
+/* Dropup de linguagem */
+
+ /* Dropup Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  left: 0px;
+  bottom: 0px;
+  position: fixed;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  bottom: 0px;
+  position: fixed;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: #ddd}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/*Video background homepage*/
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*Estilos para página About Us*/
+#users_review{
+  max-width: 45%;
+  height: auto;
+}
+
+strong{
+  color: #112d4e;
+}
+
+#review_button{
+  background-color: #112d4e;
+	color: white;
+	border: #000;
+}
+
+h1{
+  color: #112d4e;
+}
+
+/*Side Menu*/
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#burger{
+  font-size:30px;
+  cursor:pointer;
+  z-index: 99;
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 0;
+  padding-right: 1%;
+  color:white;
+}
+
+#burger:hover{
+  color: grey;
+}
+
+header {
+	height: 50px;
+	background-color: #112d4e;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	position: fixed;
+  width: 100%;
+  z-index: 1;
+  right: 0px;
+  font-size: 20px;
+}

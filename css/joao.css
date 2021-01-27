@@ -1,0 +1,245 @@
+/* Conteúdo CSS para o sistema de menu */
+style* { margin: 0 auto; font-family: 'Source Sans Pro', sans-serif; }
+
+body { 
+	margin: 0 auto; 
+}
+
+h3{
+	color: #112d4e;
+}
+
+.separator{
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+strong{
+	color: #112d4e;
+}
+
+h1{
+	color:#112d4e
+}
+
+#joao_avatar{
+	max-width: 85%;
+	height: auto;
+}
+
+header {
+	height: 70px;
+	background-color: #3f72af;
+	border-bottom: 1px solid #494949;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header > h1 {
+	width: calc(100% - 160px);
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+header > .top {
+	position: absolute;
+	left: 20px;
+}
+header > .top a.menu_icon i {
+	color: #000;
+	font-size: 40px;
+	padding-top: 5px;
+	transition: .2s ease;
+}
+header > .top a.menu_icon:hover i {
+	color: #fff;
+}
+nav.menu {
+	width: 300px;
+	min-height: calc(100vh - 121px);
+	background-color: #dbe2ef;
+	position: absolute;
+	left: -300px;
+	transition: .3s all;
+}
+nav.menu > a {
+    display: block;
+    padding: 5px;
+    margin: 15px 0 0px 20px;
+    color: #494949;
+    text-transform: uppercase;
+}
+main {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+footer {
+	height: 40px;
+	background-color: #1b262c;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.menu_show {
+	left: 0!important;
+}
+
+@media screen and (max-width: 425px) {
+	header h1 {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 360px) {
+	nav.menu {
+		width: 100%;
+		left: -100%; 
+	}
+}
+
+/* Alterações feitas para a página do João */
+.item_menu{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title_menu{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+main{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#div-banner-joao{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+#img-banner-joao{
+	width: 25%;
+	height: auto;
+}
+
+#div-bio-joao{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+/*Skill level*/
+
+.skill-icon{
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#skill_table{
+	width: 100%;
+	height: auto;
+}
+
+#links-nav{
+	right: 0px;
+	padding-right: 10px;
+	position: absolute;
+	bottom: 11px;
+}
+
+.nav-item{
+	text-decoration: none;
+}
+
+/*Acenar da mão*/
+.wave {
+	animation-name: wave-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	transform-origin: 70% 70%;
+	display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+	  0% { transform: rotate( 0.0deg) }
+	 10% { transform: rotate(14.0deg) }
+	 20% { transform: rotate(-8.0deg) }
+	 30% { transform: rotate(14.0deg) }
+	 40% { transform: rotate(-4.0deg) }
+	 50% { transform: rotate(10.0deg) }
+	 60% { transform: rotate( 0.0deg) }
+	100% { transform: rotate( 0.0deg) }
+  }
+
+  #skill-button{
+	background-color: #112d4e;
+	color: white;
+	border: #000;
+}
+
+/* Dropup de linguagem */
+
+ /* Dropup Button */
+ .dropbtn {
+	background-color: #3f72af;
+	color: white;
+	padding: 9px;
+	font-size: 15px;
+	border: none;
+	left: 0px;
+	bottom: 0px;
+	position: fixed;
+  }
+  
+  /* The container <div> - needed to position the dropup content */
+  .dropup {
+	position: relative;
+	display: inline-block;
+	left: 0px;
+	bottom: -8px;
+	position: fixed;
+  }
+  
+  /* Dropup content (Hidden by Default) */
+  .dropup-content {
+	display: none;
+	position: absolute;
+	bottom: 48px;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropup */
+  .dropup-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropup links on hover */
+  .dropup-content a:hover {background-color: #ddd}
+  
+  /* Show the dropup menu on hover */
+  .dropup:hover .dropup-content {
+	display: block;
+  }
+
+  @media (max-width: 670px){
+	  h1{
+		  font-size: 75%;
+	  }
+	  p{
+		  font-size: 75%;
+	  }
+  }
