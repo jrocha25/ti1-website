@@ -182,6 +182,31 @@ h1{
   color: #112d4e;
 }
 
+/*Página dos contactos*/
+
+#map {
+  position: absolute;
+  top: 27%;
+  bottom: 10%;
+  left: 20%;
+  right: 20%;
+}
+
+h3 {
+  text-align: center;
+  left: 20%;
+}
+
+#contactos_p{
+  text-align: center;
+}
+
+#contactos_h1{
+  color: #112d4e;
+  margin-top: 60px;
+  text-align: center;
+}
+
 /*Side Menu*/
 .sidenav {
   display: none;
