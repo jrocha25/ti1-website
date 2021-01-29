@@ -187,10 +187,46 @@ h1{
 
 #map {
   position: absolute;
-  top: 27%;
+  top: 40%;
   bottom: 10%;
   left: 20%;
   right: 20%;
+}
+
+#istec_logo{
+  width: 45%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contactos{
+  text-align: center;
+}
+
+.contactos > p{
+  color: #000;
+}
+
+.contactos > h3{
+  color: #112d4e;
+}
+
+.contactos_div{
+  left: 0;
+}
+
+.istec_div{
+  right: 0;
+  text-align: center;
+  color: #000;
+}
+
+.istec_div > h1{
+  text-align: center;
+  color: #112d4e;
+  margin-top: 10%;
 }
 
 h3 {
@@ -204,7 +240,7 @@ h3 {
 
 #contactos_h1{
   color: #112d4e;
-  margin-top: 60px;
+  margin-top: 30%;
   text-align: center;
 }
 

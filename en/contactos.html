@@ -1,58 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <style>
-        #map {
-            position: absolute;
-            top: 20%;
-            bottom: 20%;
-            left: 20%;
-            right: 20%;
-        }
+    <title>Contacts</title>
 
-        h1 {
-            text-align: center;
-            left: 20%;
-        }
-
-        h3 {
-            text-align: center;
-            left: 20%;
-        }
-
-        h5 {
-            text-align: center;
-            left: 20%;
-            right: 20%;
-        }
-    </style>
+    <!--Links para as folhas de estilo-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/top_button.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 </head>
 <body>
-    <div id="map"></div>
-    <script>
-        var map = L.map('map').setView([41.1493836,-8.60311], 30);
+  <!--Barra no topo-->
+  <header>
+    João Rocha &amp; Tiago Santos
 
-        L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Ms1ewiL5rf6SN9FCFSOf', {
-            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-        }).addTo(map);
-        var marker = L.marker([41.1493836,-8.60311]).addTo(map);
-    </script>
-    <h1>Interesse em contactar-nos?</h1>
-    <h3>Visite-nos abaixo!</h3>
-    <h5>Para informações por email ou telefone, os nossos contactos individuais encontram-se na página de cada um.</h5>
+    <!--Side menu-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./index.html">Homepage</a>
+      <a href="./joao.html">João Rocha</a>
+      <a href="./tiago.html">Tiago Santos</a>
+      <a href="./about_us.html">About Us</a>
+    </div>
+    <!--"Botão" para mostrar o side menu-->
+    <span id="burger" onclick="openNav()">&#9776;</span>
+  </header>
+
+  <!--Div onde o API do mapa irá ficar-->
+    <div id="map"></div>
+
+    <h1 id="contactos_h1">Interested in contacting us?</h1>
+    <h3>Visit us down below!</h3>
+    <p id="contactos_p">Para informações por email ou telefone, os nossos contactos individuais encontram-se na página de cada um.</p>
+
 </body>
 <footer>
+  
     <div class="dropup">
       <button class="dropbtn">Language</button>
       <div class="dropup-content">
-        <a href="../en/index.html">English</a>
-        <a href="../pt/index.html"> <strong>Português</strong></a>
+        <a href="../en/index.html"><strong>English</strong></a>
+        <a href="../pt/index.html">Português</a>
       </div>
     </div>
   
@@ -64,8 +53,16 @@
     <!--Div para o logotipo das "redes sociais" (de momento apenas GitHub)-->
       <div class="logo">
         <a href="#">
-          <img src="images/GitHub-Mark-Light-32px.png" alt="GitHub Repo" class="logo-top">
-          <img src="images/GitHub-Mark-32px.png">  
+          <img src="../images/GitHub-Mark-Light-32px.png" alt="GitHub Repo" class="logo-top">
+          <img src="../images/GitHub-Mark-32px.png">  
         </a>
       </div>
+
+</footer>
+<!--Scripts javascript-->
+<script src="../scripts/review_system.js"></script>
+<script src="../scripts/top_button.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="../scripts/map_api.js"></script>
+<script src="../scripts/side_menu.js"></script>
 </html>
