@@ -1,11 +1,5 @@
 var userLang = navigator.language;
-var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
-if (isMobile) {
-    window.location.href = 'mobile/index.html';
-}
-
-else{
     switch(userLang){
         // Browser em inglês EUA
         case 'en':
@@ -22,4 +16,3 @@ else{
             window.location.href = 'en/index.html';
             break;
     }
-}
