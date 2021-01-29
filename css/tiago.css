@@ -108,10 +108,26 @@ p.enlarge {
   padding-right: 70px;
   line-height: 24px;}
 
-p.ajdir {
-  font-size: 100%;
-  line-height: 24px;
-  margin-left: 10%;
+.ajdir {
+  width: 100px;
+  margin-left: 15%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+  margin-left: 15%;
+}
+
+.borda {
+  width: 200px;
+  border-bottom: 1px solid grey;
+}
+
+td {
+  padding: 8px;
+  width: 200px;
+  text-align: center;
 }
 
 footer {
