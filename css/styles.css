@@ -168,6 +168,10 @@ footer{
   height: auto;
 }
 
+#about_us{
+  text-align: center;
+}
+
 strong{
   color: #112d4e;
 }
