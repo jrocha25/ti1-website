@@ -175,7 +175,8 @@ strong{
 #review_button{
   background-color: #112d4e;
 	color: white;
-	border: #000;
+  border: #000;
+  cursor: pointer;
 }
 
 h1{
@@ -275,4 +276,9 @@ header {
   z-index: 1;
   right: 0px;
   font-size: 20px;
+}
+
+p > a{
+  color: black;
+  text-decoration-color: black;
 }
