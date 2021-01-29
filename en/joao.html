@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,16 +39,15 @@
         <div>
             <table>
                 <tr>
-                    <td><img src="../images/avatar-joao.png" alt="João Rocha"></td>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><img src="../images/banner-joao.png" alt="João Rocha" id="joao_avatar"></td>
                     <td>
-                        <h1>João Pedro Silva Rocha</h1>
+                        <h1>João&nbsp;Pedro Silva&nbsp;Rocha</h1>
                         <p>🏫: Student in <strong>Computer Science Degree</strong></p>
                         <p>💻: HelpDesk Technician</p>
                         <hr class="separator">
                         <p style="font-size: 20px;">Hi! I'm João Rocha <span class="wave">👋</span></p>
                         <p>Welcome to my personal website</p>
-                        <p>📧<a href="mailto:joao.procha@pm.me">joao.procha@pm.me</a></p>
+                        <p>📧<a href="mailto:joao.rocha.90077@my.istec.pt">joao.rocha.90077@my.istec.pt</a></p>
                         <p>🌐<a href="https://www.linkedin.com/in/jo%C3%A3o-rocha-769ab5194/">LinkedIn</a></p>
                     </td>
                 </tr>
@@ -89,7 +88,7 @@
             <hr class="separator">
             <h3>Skills</h3>
             <button onclick="moveBars()" style="cursor: pointer;" id="skill-button">Get Skill Level!</button>
-            <table cellspacing="50" style="width: 100%; height:auto;">
+            <table cellspacing="50" id="skill_table">
                 <tr>
                     <td><img class="skill-icon" src="../images/linux.png" alt="Tux (Linux)"></td>
                     <td><img class="skill-icon" src="../images/python.png" alt="Python"></td>
@@ -174,9 +173,11 @@
 	<footer>
         <div id="links-nav">
             &nbsp;&nbsp;
-            <a href="../en/index.html" class="nav-item">Homepage</a>
+            <a href="./index.html" class="nav-item">Homepage</a>
             &nbsp;&nbsp;
-            <a href="#" class="nav-item">Sobre Nós</a>
+            <a href="./about_us.html" class="nav-item">About Us</a>
+            &nbsp;&nbsp;
+            <a href="./contactos.html" class="nav-item">Contacts</a>
         </div>
         <!--Menu seleção de linguagem-->
         <div class="dropup">
@@ -187,7 +188,6 @@
             </div>
           </div>
 	</footer>
-
     <!--javascript para a animação "terminal effect"-->
     <script src="../scripts/terminal_effect.js"></script>
 
