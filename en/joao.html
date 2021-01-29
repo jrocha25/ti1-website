@@ -29,14 +29,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
     
-    <title>João Rocha [EN]</title>
+    <title>João Rocha [EN] - CV Online</title>
 </head>
 <body>
     <!--Animação "terminal effect"-->
     <header class="top-bar">
 		<div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
 		<div class="top">
-		</div>
+        </div>
+        <span id="burger" onclick="openNav()">&#9776;</span>
 	</header>
 	<main>
         <div>
@@ -171,16 +172,24 @@
           </div>
           <br><br><br>
           <!--Botão para puxar para o topo da página-->
-          <button onclick="topFunction()" id="topButton" title="Go to top">&nbsp;⬆&nbsp;</button> 
+          <button onclick="topFunction()" id="topButton" title="Go to top">&nbsp;⬆&nbsp;</button>
+
+          <!--Side menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Homepage</a>
+            <a href="./joao.html">João Rocha</a>
+            <a href="./tiago.html">Tiago Santos</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./contactos.html">Contacts</a>
+      </div>
     </main>
 	<footer>
-        <div id="links-nav">
-            &nbsp;&nbsp;
-            <a href="./index.html" class="nav-item">Homepage</a>
-            &nbsp;&nbsp;
-            <a href="./about_us.html" class="nav-item">About Us</a>
-            &nbsp;&nbsp;
-            <a href="./contactos.html" class="nav-item">Contacts</a>
+        <div class="logo">
+            <a href="https://github.com/jrocha25/ti1-website" target="_blank">
+                <img src="../images/GitHub-Mark-32px.png" alt="GitHub Repo" class="logo-top">
+                <img src="../images/GitHub-Mark-Light-32px.png">  
+            </a>
         </div>
         <!--Menu seleção de linguagem-->
         <div class="dropup">
@@ -202,5 +211,8 @@
 
     <!--Ficheiro javascript para o to the top button-->
     <script src="../scripts/top_button.js"></script>
+
+    <!--Javascript para o side menu-->
+    <script src="../scripts/side_menu.js"></script>
 </body>
 </html>
