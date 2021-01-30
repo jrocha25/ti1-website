@@ -1,7 +1,7 @@
 var userLang = navigator.language;
 
     switch(userLang){
-        // Browser em inglês EUA
+        // Browser em inglês
         case 'en':
             window.location.href = 'en/index.html';
             break;
