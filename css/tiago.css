@@ -8,8 +8,8 @@ body {
   padding: 10px;
   margin-top: 70px;
   margin-bottom: 40px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .centered img {
@@ -36,16 +36,17 @@ hr {
 
 .headernome {
   position: absolute;
-  top: 20%;
-  left: 57;
+  top: 15%;
+  left: 22%;
   margin-left: 20px;
   text-align: left;
 }
 
 .headerinfos {
   position: absolute;
-  left: 58%;
-  top: 23%;
+  top: 17%;
+  right: 22%;
+  margin-right: 20px;
   text-align: left
 }
 
